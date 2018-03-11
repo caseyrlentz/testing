@@ -1,0 +1,7 @@
+body {
+  width: 100%; }
+
+.body-container {
+  width: 940px;
+  max-width: 100%;
+  margin: 0 auto; }

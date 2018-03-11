@@ -1,0 +1,33 @@
+{
+  "name": "crtvmrkt",
+  "version": "1.0.0",
+  "description": "take home example",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"this is happening\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "tbd"
+  },
+  "keywords": [
+    "exam"
+  ],
+  "author": "casey lentz",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.4",
+    "install": "^0.10.4",
+    "npm": "^5.7.1",
+    "run-sequence": "^2.2.1"
+  }
+}
