@@ -1,8 +1,13 @@
+body, div {
+    box-sizing: border-box;
+}
 body {
     width: 100%;
+    background: $body-bg;
+    background-size: cover;
 }
 .body-container {
     width: $body-width;
     max-width: 100%;
-    margin: 0 auto;
+    margin: $body-margin;
 }

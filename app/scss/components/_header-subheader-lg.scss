@@ -1,0 +1,16 @@
+.section-header-subheader-lg {
+    h1,h2 {
+        font-family: $primary-font-stack;
+        text-align: center;
+        
+    }
+
+    h1 {
+        font-size: $fs-section-heading;
+        color: $fc-section-heading;
+    }
+    h2 {
+        font-size: $fs-section-subheading;
+        color: $fc-section-heading-alt;
+    }
+}

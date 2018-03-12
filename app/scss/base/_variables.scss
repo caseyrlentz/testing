@@ -1,5 +1,6 @@
 
 $body-width: 940px;
+$body-margin: 56px auto 90px auto;
 
 //fonts 
 $primary-font-stack: "Museo Sans",helvetica,Arial,sans-serif;
@@ -31,9 +32,10 @@ $btn-clr: #8da55b;
 $btn-txt-clr: #ffffff;
 
 //components 
-$body-bg: url();
+$body-bg: #edece8 url(../images/body-bg.jpg) no-repeat;
 $btn-bg: url();
 $payment-widget-bg: url();
+$checkmark: url(../images/checkmark-bg.png);
 
 
 

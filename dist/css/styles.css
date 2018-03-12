@@ -1,7 +1,78 @@
+body, div {
+  box-sizing: border-box; }
+
 body {
-  width: 100%; }
+  width: 100%;
+  background: #edece8 url(../images/body-bg.jpg) no-repeat;
+  background-size: cover; }
 
 .body-container {
   width: 940px;
   max-width: 100%;
-  margin: 0 auto; }
+  margin: 56px auto 90px auto; }
+
+.credit-widgets .credit-widget {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 5px solid #fff;
+  box-shadow: 0 1px 1px #c4c3c0;
+  width: 100%;
+  max-width: 215px;
+  max-height: 215px;
+  text-decoration: none; }
+  .credit-widgets .credit-widget:hover .body, .credit-widgets .credit-widget.active .body {
+    border: 2px solid #adc380; }
+  .credit-widgets .credit-widget.active:before {
+    visibility: visible;
+    content: " ";
+    float: right;
+    position: relative;
+    width: 100%;
+    max-width: 35px;
+    height: 35px;
+    background-image: url(../images/checkmark-bg.png);
+    top: 2px;
+    right: 2px; }
+
+.credit-widgets .credit-widget .body {
+  border: 2px solid #e3e3e3;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 47px;
+  transition: all 700ms ease; }
+
+.credit-widgets .credit-widget .body > div.price, .credit-widgets .credit-widget .body > div.benefit {
+  font-family: "Museo Sans", helvetica, Arial, sans-serif;
+  font-size: 36px;
+  color: #4f4d4a; }
+
+.credit-widgets .credit-widget .body > div.benefit {
+  font-size: 15px;
+  padding-bottom: 35px; }
+  .credit-widgets .credit-widget .body > div.benefit.highlight {
+    color: #adc380; }
+
+.credit-widgets .credit-widget .body > div.customer-tier {
+  font-family: "Helvetica Neue", helvetica, Arial, sans-serif;
+  font-size: 13px;
+  border-top: 1px solid #e3e3e3;
+  padding: 20px 0px;
+  color: #5d5953; }
+
+.section-header-subheader-lg h1, .section-header-subheader-lg h2 {
+  font-family: "Museo Sans", helvetica, Arial, sans-serif;
+  text-align: center; }
+
+.section-header-subheader-lg h1 {
+  font-size: 60px;
+  color: #615b50; }
+
+.section-header-subheader-lg h2 {
+  font-size: 23px;
+  color: #afaba7; }
+
+.alt-subhead h3 {
+  font-family: "Museo Sans", helvetica, Arial, sans-serif;
+  font-size: 23px;
+  text-align: center; }

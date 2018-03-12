@@ -1,0 +1,65 @@
+.credit-widgets {
+    
+    .credit-widget {
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 6px;
+        border: 5px solid #fff;
+        box-shadow: 0 1px 1px #c4c3c0;
+        width: 100%;
+        max-width: 215px;
+        max-height: 215px;
+        text-decoration: none;
+        
+        &:hover, &.active {
+            .body {
+                border: 2px solid $highlight;
+            }
+        }
+
+     &.active {
+         &:before {
+            visibility: visible;
+            content: " ";
+            float: right;
+            position: relative;
+            width: 100%;
+            max-width: 35px;
+            height: 35px;
+            background-image: $checkmark;
+            top: 2px;
+            right: 2px;
+            
+         }
+     }
+    }
+    .credit-widget .body {
+      border: 2px solid #e3e3e3;
+      border-radius: 4px;
+      text-align: center;
+      padding-top: 47px;
+      transition: all 700ms ease; 
+    }
+   .credit-widget .body > div {
+       &.price, &.benefit {
+         font-family: $primary-font-stack;
+         font-size: $fs-section-heading-alt;
+         color: $fc-section-subheading-alt;
+       }
+       &.benefit {
+         font-size: $fs-section-subheading-alt;
+         padding-bottom: 35px;
+         &.highlight {
+             color: $highlight;
+         }
+       }
+       &.customer-tier {
+        font-family: $secondary-font-stack;
+        font-size: $fs-base;
+        border-top: 1px solid #e3e3e3;
+        padding: 20px 0px;
+        color: $fc-base;
+       }
+   }
+
+}
