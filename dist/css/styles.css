@@ -216,7 +216,9 @@ body {
   .alt-subhead h3 {
     font-family: "Museo Sans", helvetica, Arial, sans-serif;
     font-size: 23px;
-    text-align: center; }
+    text-align: center;
+    color: #565249;
+    font-weight: 300; }
 
 .btn-container {
   margin-top: 28px; }
