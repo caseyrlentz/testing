@@ -1,0 +1,33 @@
+
+.btn-container {
+    margin-top: 28px;
+}
+.btn {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 41px;
+    background: linear-gradient(#80994c, #8fa95b);
+    color: $btn-txt-clr;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: $primary-font-stack;
+    letter-spacing: 2px;
+    background-color:blue;
+    position: relative;
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: inset 0 0 15px #768c47; 
+    &:before {
+        content: " ";
+        position: absolute;
+        background-image: $btn-bg;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        opacity: 0.1;
+    }
+}

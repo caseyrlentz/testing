@@ -1,5 +1,6 @@
 .credit-widgets {
-    
+    margin: 57px 0px;
+    display: flex;
     .credit-widget {
         display: inline-block;
         background-color: #fff;
@@ -10,6 +11,8 @@
         max-width: 215px;
         max-height: 215px;
         text-decoration: none;
+        flex-grow: 1;
+        margin-right: 25px;
         
         &:hover, &.active {
             .body {
@@ -32,13 +35,16 @@
             
          }
      }
+     &.last {
+         margin-right: 0;
+     }
     }
     .credit-widget .body {
       border: 2px solid #e3e3e3;
       border-radius: 4px;
       text-align: center;
       padding-top: 47px;
-      transition: all 700ms ease; 
+      transition: all 700ms ease;
     }
    .credit-widget .body > div {
        &.price, &.benefit {

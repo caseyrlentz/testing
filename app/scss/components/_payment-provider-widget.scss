@@ -1,0 +1,72 @@
+.payment-gateway-widget {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px ;
+    background: $payment-widget-bg;
+    background-size: contain;
+    padding-top: 10px;
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    .heading {
+        background-color: #f5f5f5;
+        padding: 7px 9px;
+    }
+    .body {
+        padding: 24px 7px;
+    }
+    .user-info {
+        display: none;
+    }
+    .user-info .email {
+        font-family: $secondary-font-stack;
+        font-size: $fs-base;
+        color: $fc-section-subheading;
+        margin-bottom: 20px;
+    }
+    .user-info .name {
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        color: #817e79;
+    }
+    svg {
+        width: 56px;
+    }
+    i {
+        font-size: 23px;
+        color: #d0cfce;
+        &.entypo-cancel {
+            float: right;
+        }
+    }
+    &:before {
+        content: " ";
+        width: 70%;
+        background-color: $pp-dark;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 11px;
+    }
+    &:after {
+        content: " ";
+        width: 30%;
+        background-color: $pp-light;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 11px;
+        border-left: 4px solid #fff;
+    }
+
+    &.success {
+        .user-info {
+            display: block;
+        }
+        button {
+            display: none;
+        }
+    }
+
+}
