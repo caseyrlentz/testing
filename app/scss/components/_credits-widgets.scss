@@ -47,7 +47,7 @@
       transition: all 700ms ease;
     }
    .credit-widget .body > div {
-       &.price, &.benefit {
+       &.price, &.benefit,&.customer-tier {
          font-family: $primary-font-stack;
          font-size: $fs-section-heading-alt;
          color: $fc-section-subheading-alt;
@@ -67,5 +67,13 @@
         color: $fc-base;
        }
    }
+   @media screen and (max-width: $breakpoint) {
+       align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
 
+       .credit-widget {
+           margin-bottom: 25px;
+       }
+   }
 }

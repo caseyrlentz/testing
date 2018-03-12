@@ -18,7 +18,7 @@ var runSequence = require('run-sequence');
 gulp.task('browserSync', function() {
   browserSync({
     server: true,
-    index: "app/index.html"
+    index: "dist/index.html"
   })
 })
 
@@ -45,7 +45,7 @@ gulp.task('watch', function() {
 gulp.task('useref', function() {
 
   return gulp.src('app/*.html')
-    .pipe(useref())
+     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'));
