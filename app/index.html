@@ -25,7 +25,7 @@
                 <a class="credit-widget" v-bind:class="{ active: creditsTier.isSelected }" href="#" title="price goes here" v-for="creditsTier in creditsTiers" v-on:click="creditsTier.isSelected = true">
                     <div class="body">
                         <div class="price">{{creditsTier.price}}</div>
-                        <div class="benefit">{{creditsTier.benefit}}</div>
+                        <div class="benefit" v-bind:class="{ highlight: creditsTier.hasBenefit}">{{creditsTier.benefit}}</div>
                         <div class="customer-tier">{{creditsTier.customerTier}}</div>
                     </div>
                 </a>

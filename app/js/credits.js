@@ -2,25 +2,29 @@ var creditsApp = new Vue({
     el: '#creditsApp',
     data: {
       creditsTiers: [
-        { price: '20.00',
+        { price: '$20',
           benefit: "No Bonus",
           customerTier: "Individual",
-          isSelected: null
+          isSelected: null,
+          hasBenefit: false
         },
-        { price: '50.00',
+        { price: '$50',
           benefit: "No Bonus",
           customerTier: "Professional",
-          isSelected: null
+          isSelected: null,
+          hasBenefit: false
         },
-        { price: '100.00',
+        { price: '$100',
           benefit: "+ $10 Bonus",
           customerTier: "Most Popular",
-          isSelected: null
+          isSelected: null,
+          hasBenefit: true
         },
-        { price: '200.00',
+        { price: '$200',
           benefit: "+ $22 Bonus",
           customerTier: "Best Value",
-          isSelected: null
+          isSelected: null,
+          hasBenefit: true
         }
 
       ],
