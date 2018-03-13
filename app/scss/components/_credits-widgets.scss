@@ -18,6 +18,9 @@
             .body {
                 border: 2px solid $highlight;
             }
+            .body>div.customer-tier {
+                font-weight: 700;
+            }
         }
 
      &.active {
@@ -65,6 +68,8 @@
         border-top: 1px solid #e3e3e3;
         padding: 20px 0px;
         color: $fc-base;
+        font-weight: normal;
+        transition: all 700ms ease;
        }
    }
    @media screen and (max-width: $breakpoint) {

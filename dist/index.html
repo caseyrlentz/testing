@@ -20,7 +20,7 @@
             <!-- value of selection -->
             <input type="hidden" name="total" value="">
             <div class="credit-widgets">
-                <a class="credit-widget" v-bind:class="{ active: creditsTier.isSelected }" href="#" title="price goes here" v-for="creditsTier in creditsTiers" v-on:click="creditsTier.isSelected = true">
+                <a class="credit-widget" v-bind:class="{ active: creditsTier.isSelected }" href="#" title="price goes here" v-for="creditsTier in creditsTiers" v-on:click="creditsTier.isSelected = !creditsTier.isSelected">
                     <div class="body">
                         <div class="price">{{creditsTier.price}}</div>
                         <div class="benefit" v-bind:class="{ highlight: creditsTier.hasBenefit}">{{creditsTier.benefit}}</div>

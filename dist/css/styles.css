@@ -100,6 +100,8 @@ body {
     margin-right: 25px; }
     .credit-widgets .credit-widget:hover .body, .credit-widgets .credit-widget.active .body {
       border: 2px solid #adc380; }
+    .credit-widgets .credit-widget:hover .body > div.customer-tier, .credit-widgets .credit-widget.active .body > div.customer-tier {
+      font-weight: 700; }
     .credit-widgets .credit-widget.active:before {
       visibility: visible;
       content: " ";
@@ -133,7 +135,9 @@ body {
     font-size: 13px;
     border-top: 1px solid #e3e3e3;
     padding: 20px 0px;
-    color: #5d5953; }
+    color: #5d5953;
+    font-weight: normal;
+    transition: all 700ms ease; }
   @media screen and (max-width: 768px) {
     .credit-widgets {
       align-items: center;
